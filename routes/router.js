@@ -9,6 +9,7 @@ router.get("/",isAuth,homeCtrl.home);
 router.get("/login",homeCtrl.login);
 router.post('/login',homeCtrl.handleLogin);
 
-
+router.get("/signup",homeCtrl.signup);
+router.post("/signup",homeCtrl.signupHandle);
 
 module.exports = router;
